@@ -13,7 +13,7 @@ listen_socket = socket(AF_INET, SOCK_STREAM)
 listen_socket.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
 #将套接字地址与套接字对象绑定。
 listen_socket.bind((HOST, PORT))
-#监听TCP连接，最大允许的连接数目为5.
+#监听TCP连接，最大允许的连接数目为1.
 listen_socket.listen(1)
 print 'Serving http on port {0}'.format(PORT)
 while True:
