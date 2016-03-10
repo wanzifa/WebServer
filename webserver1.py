@@ -1,5 +1,6 @@
 #coding:utf-8
-"""利用python的socket模块实现一个最简单的web服务器
+"""
+利用python的socket模块实现一个最简单的web服务器
 """
 
 from socket import *
