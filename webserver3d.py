@@ -1,6 +1,6 @@
+#coding:utf-8
 import os 
 import socket
-import time
 
 SERVER_ADDRESS = (HOST, PORT) = '', 8888
 REQUEST_QUEUE_SIZE = 5
@@ -20,7 +20,6 @@ HTTP/1.1 200 OK
 Hello world!
 """
     client_connection.sendall(http_response)
-    time.sleep(60)
 
 def serve_forever():
     listen_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -29,9 +28,11 @@ def serve_forever():
     listen_socket.listen(REQUEST_QUEUE_SIZE)
     print('Serving HTTP on port {port}....'.format(port=PORT))
     print('Parent PID (PPID):{pid}\n'.format(pid=os.getpid()))
-
+    
+    clients = []
     while True:
         client_connection, client_address = listen_socket.accept()
+        clients.append(client_connection)
         pid = os.fork()
         if pid == 0:
             listen_socket.close()
@@ -39,7 +40,9 @@ def serve_forever():
             client_connection.close()
             os._exit(0)
         else:
-            client_connection.close()
+            #把关闭为客户端专门创建的socket的对象的操作注释掉了
+            #client_connection.close()
+            print(len(clients))
 
 if __name__ == '__main__':
     serve_forever()
