@@ -3,7 +3,7 @@
 <strong>基础知识</strong></br>
 [python socket模块学习笔记](http://www.cnblogs.com/xiaowuyi/archive/2012/08/06/2625509.html)</br>
 
-<h3><strong>03.11更新WSGIWebServer</strong></h3></br>
+<h3><strong>03.11更新WSGIWebServer</strong></h3>
 >推荐阅读:[WSGI与CGI的故事](http://1.jasonblog.sinaapp.com/2011/07/12/%E6%B5%85%E8%B0%88-python-wsgi/)</br>
 
 <h3><strong>03.13更新</strong></h3>
