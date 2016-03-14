@@ -1,3 +1,8 @@
+"""
+与服务器3c的代码几乎没有什么区别
+需要注意的是serve_forever里面父进程里客户端套接字对象这次没有被及时的关闭
+"""
+
 #coding:utf-8
 import os 
 import socket

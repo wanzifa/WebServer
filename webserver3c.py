@@ -1,5 +1,6 @@
 import os 
 import socket
+#time函数在下面用来使进程休眠
 import time
 
 SERVER_ADDRESS = (HOST, PORT) = '', 8888
@@ -37,6 +38,7 @@ def serve_forever():
             listen_socket.close()
             handle_request(client_connection)
             client_connection.close()
+            #退出子进程
             os._exit(0)
         else:
             client_connection.close()

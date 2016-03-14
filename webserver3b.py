@@ -1,5 +1,6 @@
 #coding:utf-8
 import socket
+#time函数在下面用来使进程休眠
 import time 
 
 SERVER_ADDRESS = (HOST, PORT) = '', 8888
