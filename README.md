@@ -19,5 +19,5 @@
 [Python标准库中的signal模块](http://blog.sina.com.cn/s/blog_a04184c101010ktb.html)</br>
 [linux--等待进程结束wait()和waitpid()](http://www.2cto.com/os/201107/98258.html)</br>
 
-----------------<h3>FLAG！！周五之前憋出一篇web服务器的总结博客!!</h3>------------------
+----------------<h3>FLAG！！周五之前憋出一篇web服务器的总结博客！！</h3>------------------
 
